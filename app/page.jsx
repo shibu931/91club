@@ -1,3 +1,4 @@
+import DialogComponent from "@/components/shared/DialogComponent";
 import ReviewCarousel from "@/components/shared/ReviewCarousel";
 import VideoPlayer from "@/components/shared/VideoPlayer";
 import Image from "next/image";
@@ -56,26 +57,30 @@ const reviews = [
 export default function Home() {
   
   return (
-    <main className="mt-16 pt-6">
+    <main className="mt-16 pt-6 ">
+      <DialogComponent/>
       <div className="container overflow-hidden p-10" id="home">
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 banner-border pt-8 rounded-xl">
           <div className="text-center lg:col-span-3 col-span-6 lg:ps-5 px-3 pb-10">
             <h1 className="text-4xl gradient-text text-transparent animate-gradient font-bold leading-tight mb-5">91CLUB ONE OF THE MOST TRUSTED SITE IN INDIA</h1>
-            <p className="mb-4 text-lg">Welcome to 91Club - your premier destination for exhilarating gaming experiences! Immerse yourself in a world of thrilling games, including Wingo, Aviator, Color Trading, and many more, offering endless entertainment. 91Club provides a safe and enjoyable platform for gaming enthusiasts.</p>
-            <p className="text-lg">Experience the thrill of gaming responsibly with 91Club. Join us for a chance to win exciting rewards while enjoying top-notch entertainment. Discover why 91Club is the go-to choice for those seeking unparalleled fun and excitement.</p>
-            <div className="mx-auto mt-10">
+            <div className="mx-auto lg:hidden my-8">
               <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
               <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
-
+            </div>
+            <p className="mb-4 text-lg">Welcome to 91Club - your premier destination for exhilarating gaming experiences! Immerse yourself in a world of thrilling games, including Wingo, Aviator, Color Trading, and many more, offering endless entertainment. 91Club provides a safe and enjoyable platform for gaming enthusiasts.</p>
+            <p className="text-lg">Experience the thrill of gaming responsibly with 91Club. Join us for a chance to win exciting rewards while enjoying top-notch entertainment. Discover why 91Club is the go-to choice for those seeking unparalleled fun and excitement.</p>
+            <div className="mx-auto hidden lg:block mt-10">
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
             </div>
           </div>
           <div className="lg:col-span-3 m-auto">
             <Image
               src="/img/banner1.jpg"
               width={500}
-              height={250}
+              height={350}
               alt="Banner"
-              className="m-auto w-full"
+              className="m-auto sm:w-full"
             />
           </div>
         </div>
@@ -100,6 +105,10 @@ export default function Home() {
               <li className="mb-4 text-lg">Playable at any time and from any location, the game is entertaining and simple to pick up. To play the game, all you need is an internet connection and a smartphone.</li>
               <li className="mb-4 text-lg">By encouraging your friends and family to download the app, you can get paid. For every effective recommendation, you will get an extra reward.</li>
               </ul>
+              <div className="mx-auto text-center my-8">
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+            </div>
             </div>
             <div className="mx-auto">
               <video width="300" height="auto" controls autoPlay className="rounded-lg">
@@ -175,6 +184,10 @@ export default function Home() {
               <h5 className="text-center text-2xl font-semibold">SBI</h5>
             </div>
           </div>
+          <div className="mx-auto text-center my-8">
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+            </div>
         </div>
       </section>
 
@@ -245,6 +258,10 @@ export default function Home() {
               />
             </div>
           </div>
+          <div className="mx-auto text-center my-8">
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+            </div>
         </div>
       </section>
 
@@ -266,7 +283,7 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
-            <div className="lg:pr-24 my-auto">
+            <div className="lg:pr-24 my-auto px-4">
               <h2 className="text-left text-4xl">Get <span className="text-red-500 font-bold">91Club</span> right now to start your incredible gaming adventure!</h2>
               <p className="text-lg mb-3">With 91Club, experience the thrill of responsible gambling. Users can enjoy their favorite games in a safe and secure atmosphere on our platform. 91Club offers gaming for all skill levels, from novices to experts.</p>
               <p className="text-lg mb-3">Become one of the thousands of happy customers who have chosen 91Club as their go-to gaming app. Start earning rewards now and enjoy the thrill of gaming without taking any chances!</p>
