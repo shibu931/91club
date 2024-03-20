@@ -64,14 +64,14 @@ export default function Home() {
           <div className="text-center lg:col-span-3 col-span-6 lg:ps-5 px-3 pb-10">
             <h1 className="text-4xl gradient-text text-transparent animate-gradient font-bold leading-tight mb-5">91CLUB ONE OF THE MOST TRUSTED SITE IN INDIA</h1>
             <div className="mx-auto lg:hidden my-8">
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
             </div>
             <p className="mb-4 text-lg">Welcome to 91Club - your premier destination for exhilarating gaming experiences! Immerse yourself in a world of thrilling games, including Wingo, Aviator, Color Trading, and many more, offering endless entertainment. 91Club provides a safe and enjoyable platform for gaming enthusiasts.</p>
             <p className="text-lg">Experience the thrill of gaming responsibly with 91Club. Join us for a chance to win exciting rewards while enjoying top-notch entertainment. Discover why 91Club is the go-to choice for those seeking unparalleled fun and excitement.</p>
             <div className="mx-auto hidden lg:block mt-10">
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
             </div>
           </div>
           <div className="lg:col-span-3 m-auto">
@@ -106,8 +106,8 @@ export default function Home() {
               <li className="mb-4 text-lg">By encouraging your friends and family to download the app, you can get paid. For every effective recommendation, you will get an extra reward.</li>
               </ul>
               <div className="mx-auto text-center my-8">
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
             </div>
             </div>
             <div className="mx-auto">
@@ -185,8 +185,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto text-center my-8">
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
             </div>
         </div>
       </section>
@@ -259,8 +259,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto text-center my-8">
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+              <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
             </div>
         </div>
       </section>
@@ -289,8 +289,8 @@ export default function Home() {
               <p className="text-lg mb-3">Become one of the thousands of happy customers who have chosen 91Club as their go-to gaming app. Start earning rewards now and enjoy the thrill of gaming without taking any chances!</p>
               <p className="text-lg mb-3">Get 91Club right now to start your incredible gaming adventure!</p>
               <div className="mx-auto mt-10">
-                <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-                <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
+                <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+                <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</Link>
 
               </div>
             </div>
