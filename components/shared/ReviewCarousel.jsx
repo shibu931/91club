@@ -28,12 +28,12 @@ const ReviewCarousel = ({ reviews }) => {
                                 <div>
                                     <p className="text-lg mb-6">{item.content}</p>
                                     <p className="font-semibold text-xl">-{item.name}</p>
-                                    <div className="mx-auto mt-10">
-                                    <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-blue-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-                                    <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-green-500 text-white rounded-md my-auto me-2'>Login</Link>
+                                    <div className="mx-auto flex felx-wrap mt-10">
+                                        <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-blue-500 text-white rounded-md my-auto me-2'>Register Now</Link>
+                                        <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-green-500 text-white rounded-md my-auto me-2'>Login</Link>
+                                    </div>
                                 </div>
-                                </div>
-                                
+
                             </div>
 
                         </div>

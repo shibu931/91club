@@ -8,7 +8,10 @@ const Footer = () => {
         <p><Link href="/">91Club</Link> @ Copyright 2024</p>
       </div>
       <div className='text-lg' id='contact-us'>
-        <p className='text-white'><strong>Email: </strong>91Club@gamil.com</p>
+        <p className='text-white'><strong>Email: </strong><Link href="mailto:asterioamara@gamil.com">asterioamara@gamil.com</Link></p>
+        <div>
+          <p className='text-white'><strong>Webstie</strong>: <Link href="https://wwww.91service.in/wap/indexE.jsp#" className='font-semibold underline underline-offset-4 '>91Club Service Portal</Link></p>
+        </div>
       </div>
     </footer>
   )

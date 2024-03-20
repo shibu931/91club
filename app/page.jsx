@@ -131,7 +131,7 @@ export default function Home() {
                 alt="Paytm"
                 className="mx-auto"
               />
-              <h5 className="text-center text-2xl font-semibold">Paytm</h5>
+              <h5 className="text-center text-xl xl:text-2xl font-semibold">Paytm</h5>
             </div>
             <div className="p-3 lg:p-6 rounded-lg transition-all duration-300 ease-in hover:shadow-md shadow-black/50 hover:-translate-y-2 border-blue-400 bg-white border" >
               <Image
@@ -141,7 +141,7 @@ export default function Home() {
                 alt="Gpay"
                 className="mx-auto"
               />
-              <h5 className="text-center text-2xl font-semibold">Google Pay</h5>
+              <h5 className="text-center text-xl xl:text-2xl font-semibold">Google Pay</h5>
             </div>
             <div className="p-3 lg:p-6 rounded-lg transition-all duration-300 ease-in hover:shadow-md shadow-black/50 hover:-translate-y-2 border-blue-400 bg-blue-600 border" >
               <Image
@@ -151,7 +151,7 @@ export default function Home() {
                 alt="Mobikwik"
                 className="mx-auto"
               />
-              <h5 className="text-center text-2xl font-semibold">Mobikwik</h5>
+              <h5 className="text-center text-xl xl:text-2xl font-semibold">Mobikwik</h5>
             </div>
             <div className="p-3 lg:p-6 rounded-lg transition-all duration-300 ease-in hover:shadow-md shadow-black/50 hover:-translate-y-2 border-blue-400 bg-purple-700 border" >
               <Image
@@ -161,7 +161,7 @@ export default function Home() {
                 alt="Phonepe"
                 className="mx-auto"
               />
-              <h5 className="text-center text-2xl font-semibold">Phonepe</h5>
+              <h5 className="text-center text-xl xl:text-2xl font-semibold">Phonepe</h5>
             </div>
             <div className="p-3 lg:p-6 rounded-lg transition-all duration-300 ease-in hover:shadow-md shadow-black/50 hover:-translate-y-2 border-blue-400 bg-green-400 border" >
               <Image
@@ -171,7 +171,7 @@ export default function Home() {
                 alt="Bhim UPI"
                 className="mx-auto"
               />
-              <h5 className="text-center text-2xl font-semibold">Bhim UPI</h5>
+              <h5 className="text-center text-xl xl:text-2xl font-semibold">Bhim UPI</h5>
             </div>
             <div className="p-3 lg:p-6 rounded-lg transition-all duration-300 ease-in hover:shadow-md shadow-black/50 hover:-translate-y-2 border-blue-400 bg-blue-500 border" >
               <Image
@@ -181,7 +181,7 @@ export default function Home() {
                 alt="SBI"
                 className="mx-auto"
               />
-              <h5 className="text-center text-2xl font-semibold">SBI</h5>
+              <h5 className="text-center text-xl xl:text-2xl font-semibold">SBI</h5>
             </div>
           </div>
           <div className="mx-auto text-center my-8">
