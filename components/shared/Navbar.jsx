@@ -16,10 +16,10 @@ const Navbar = () => {
             <ul className='flex'>
                 <li>    
                     <Link className='nav-link' href="#home">Home</Link>
-                    <Link className='nav-link ps-2' href="/bonus"><Image src="/img/icons8-money-64.png" width={25} height={25} alt='bonus' className='inline'/>Bouns</Link>
-                    <Link className='nav-link' href="/reviews">Reviews</Link>
-                    <Link className='nav-link' href="/how-to-play">How To Play</Link>
-                    <Link className='nav-link' href="/contact-us">Contact Us</Link>
+                    <Link className='nav-link ps-2' href="#bonus"><Image src="/img/icons8-money-64.png" width={25} height={25} alt='bonus' className='inline'/>Bonus</Link>
+                    <Link className='nav-link' href="#reviews">Reviews</Link>
+                    <Link className='nav-link' href="#features">Features</Link>
+                    <Link className='nav-link' href="#contact-us">Contact Us</Link>
                 </li>
             </ul>
         </nav>

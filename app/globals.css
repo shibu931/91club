@@ -181,6 +181,11 @@ section{
   color:#fff;
 }
 
+.custom-ul li::before{
+  content: '➥';
+  color: red;
+  padding-right: 10px;
+}
 
 /* 
 
