@@ -8,7 +8,7 @@ const Footer = () => {
         <p><a href="/">91Club</a> @ Copyright 2024</p>
       </div>
       <div className='text-lg' id='contact-us'>
-        <p className='text-white'><strong>Email: </strong><a href="mailto:asterioamara@gamil.com">asterioamara@gmail.com</a></p>
+        <p className='text-white'><strong>Email: </strong><a href="mailto:asterioamara@gmail.com">asterioamara@gmail.com</a></p>
         <div>
           <p className='text-white'><strong>Webstie</strong>: <a href="https://wwww.91service.in/wap/indexE.jsp#" className='font-semibold underline underline-offset-4 '>91Club Service Portal</a></p>
         </div>
