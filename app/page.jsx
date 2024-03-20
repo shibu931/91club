@@ -60,7 +60,7 @@ export default function Home() {
     <main className="mt-16 pt-6 ">
       <DialogComponent/>
       <div className="container overflow-hidden p-10" id="home">
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 banner-border pt-8 rounded-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-6 lg:gap-4 banner-border pt-8 rounded-xl">
           <div className="text-center lg:col-span-3 col-span-6 lg:ps-5 px-3 pb-10">
             <h1 className="text-4xl gradient-text text-transparent animate-gradient font-bold leading-tight mb-5">91CLUB ONE OF THE MOST TRUSTED SITE IN INDIA</h1>
             <div className="mx-auto lg:hidden my-8">
