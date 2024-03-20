@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import a from 'next/link'
 import React from 'react'
 import {
     Sheet,
@@ -35,19 +35,19 @@ const MobileNav = () => {
                     <nav className='my-auto'>
                         <ul className='flex flex-col flex-wrap mt-5 text-xl'>
                             <li className='my-3 w-full'>
-                                <Link className='nav-link' href="#home">Home</Link>
+                                <a className='nav-link' href="#home">Home</a>
                             </li>
                             <li className='my-3 w-full'>
-                                <Link className='nav-link ps-2' href="#bonus"><Image src="/img/icons8-money-64.png" width={25} height={25} alt='bonus' className='inline' />Bonus</Link>
+                                <a className='nav-link ps-2' href="#bonus"><Image src="/img/icons8-money-64.png" width={25} height={25} alt='bonus' className='inline' />Bonus</a>
                             </li>
                             <li className='my-3 w-full'>
-                                <Link className='nav-link' href="#reviews">Reviews</Link>
+                                <a className='nav-link' href="#reviews">Reviews</a>
                             </li>
                             <li className='my-3 w-full'>
-                                <Link className='nav-link' href="#features">Features</Link>
+                                <a className='nav-link' href="#features">Features</a>
                             </li>
                             <li className='my-3 w-full'>                                
-                                <Link className='nav-link' href="#contact-us">Contact Us</Link>
+                                <a className='nav-link' href="#contact-us">Contact Us</a>
                             </li>
                         </ul>
                     </nav>

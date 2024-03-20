@@ -7,7 +7,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
-import Link from "next/link"
+import a from "next/link"
 import { useEffect, useState } from "react"
 
 
@@ -29,8 +29,7 @@ const DialogComponent = ({ state }) => {
                     </div>
                     <h2 className="text-center text-purple-700 text-3xl font-bold">Register Now<br /> &<br /> Claim ₹100 Bouns Now</h2>
                     <div className="mx-auto text-center mt-10">
-                        <Link href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</Link>
-
+                        <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
                     </div>
                 </div>
             </div>
