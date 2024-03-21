@@ -32,7 +32,7 @@ export const metadata = {
     siteName: 'Tiranga Games',
     images: [
       {
-        url: 'https://tiranga-games.vercel.app/og-img.png', 
+        url: 'https://tiranga-games.vercel.app/og-img.jpg', 
         width: 800,
         height: 600,
       },
@@ -60,7 +60,7 @@ export const metadata = {
     siteId: '1467726470533754880',
     creator: '@tirangagame',
     creatorId: '1467726470533754880',
-    images: ['https://tiranga-games.vercel.app/og-img.png'], 
+    images: ['https://tiranga-games.vercel.app/og-img.jpg'], 
   },
 }
 
