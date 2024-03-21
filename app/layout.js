@@ -7,32 +7,32 @@ import MobileNav from "@/components/shared/MobileNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Tiranga Games',
-  description: 'Experience the adrenaline rush of color prediction gaming with Trianga Game! Predict colors in real-time, compete globally, and win big. Secure transactions and seamless gameplay await. Join us for an exhilarating journey to unlock fortunes!',
-  generator: 'Tiranga Games',
-  applicationName: 'Tiranga Games',
+  title: '91 Club Official - 91 Clubs 100% trusted website play and win money',
+  description: 'Join 91 Club Official to play thrilling games like Aviator, Win Go, sports, and more. Compete and win real money prizes! Join now for the ultimate gaming experience!',
+  generator: '91 Clubs',
+  applicationName: '91 Clubs',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Tiranga Games', 'Color Prediction Game', 'Daman Game','91Club',"avitator game",'color trading','bounty games'],
-  authors: [{ name: 'Rahul Kumar' }, { name: 'Rahul Kumar', url: 'https://tiranga-games.vercel.app/' }],
+  keywords: ['91club, 91 club, 91 club vip, 91 club register, 91 club app, 91 club online game'],
+  authors: [{ name: 'Rahul Kumar' }, { name: 'Rahul Kumar', url: 'https://www.91clubs.info/' }],
   creator: 'Rahul Kumar',
-  publisher: 'Tiranga Game App',
+  publisher: '91 Club APP',
   formatDetection: {
-    email: 'tirangagames@gmail.com',
+    email: 'asterioamara@gmail.com',
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://tiranga-games.vercel.app/'),
+  metadataBase: new URL('https://www.91clubs.info/'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Uncovering the Colors of Triumph: Aviator Gaming & Tiranga Color Prediction - Your Passport to Excitement and Benefits!',
-    description: 'Enter the thrilling world of Aviator Gaming and Tiranga Color Prediction, where strategy and excitement collide. Savor the thrill of making color predictions and navigating thrilling adventures as you compete for amazing prizes. Come play with us for a unique gaming experience where every choice you make could result in success. Are you prepared to accept the challenge and take off?',
-    url: 'https://tiranga-games.vercel.app/',
-    siteName: 'Tiranga Games',
+    title: '91 Club Official - 91 Clubs 100% trusted website play and win money',
+    description: 'Join 91 Club Official to play thrilling games like Aviator, Win Go, sports, and more. Compete and win real money prizes! Join now for the ultimate gaming experience!',
+    url: 'https://www.91clubs.info/',
+    siteName: '91 club',
     images: [
       {
-        url: 'https://tiranga-games.vercel.app/og-img.jpg', 
+        url: 'https://www.91clubs.info/og-img.jpg', 
         width: 800,
         height: 600,
       },
@@ -55,12 +55,12 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tiranga Game Color prediction color trading aviator',
-    description: '🚀 Enter the world of Tiranga Color Prediction & Aviator Gaming! 🎮 Dive into thrilling predictions and high-flying adventures for your shot at victory and rewards. Are you ready to take on the challenge? #TirangaGaming #Aviator #PredictAndWin',
+    title: '91 Club Official - 91 Clubs 100% trusted website play and win money',
+    description: 'Join 91 Club Official to play thrilling games like Aviator, Win Go, sports, and more. Compete and win real money prizes! Join now for the ultimate gaming experience!',
     siteId: '1467726470533754880',
-    creator: '@tirangagame',
+    creator: '@91club',
     creatorId: '1467726470533754880',
-    images: ['https://tiranga-games.vercel.app/og-img.jpg'], 
+    images: ['https://www.91clubs.info/og-img.jpg'], 
   },
 }
 
