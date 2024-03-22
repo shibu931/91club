@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import MobileNav from "@/components/shared/MobileNav";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,7 @@ export const metadata = {
     siteName: '91 club',
     images: [
       {
-        url: 'https://www.91clubs.info/og-img.jpg', 
+        url: 'https://www.91clubs.info/og-img.jpg',
         width: 800,
         height: 600,
       },
@@ -60,18 +61,30 @@ export const metadata = {
     siteId: '1467726470533754880',
     creator: '@91club',
     creatorId: '1467726470533754880',
-    images: ['https://www.91clubs.info/og-img.jpg'], 
+    images: ['https://www.91clubs.info/og-img.jpg'],
   },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZK7TTZ5G1T"></Script>
+        <Script id="googleanalyticstag">
+          {` 
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZK7TTZ5G1T');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
-        <Navbar/>
-        <MobileNav/>
+        <Navbar />
+        <MobileNav />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
