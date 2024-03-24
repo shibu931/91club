@@ -79,6 +79,21 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-ZK7TTZ5G1T');
           `}
         </Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16508776390"></Script>
+        <Script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-16508776390');
+          `}
+        </Script>
+        <Script>
+          {`
+            gtag('event', 'conversion', {'send_to': 'AW-16508776390/G_qGCKqMjJ8ZEMbf_789'});
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <Navbar />
