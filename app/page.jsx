@@ -37,7 +37,7 @@ const usp = [
 
 const reviews = [
   {
-    name: "Javed Akhtar",
+    name: "Aqib",
     content: "There's not enough 91Club for me! I can spend hours playing the diversity of games, and the real-time incentives make the experience much more exciting. Strongly advised!",
     img: "/img/review1.jpg"
   },
