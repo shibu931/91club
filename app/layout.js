@@ -8,12 +8,12 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: '91 Club - Play and Win Real Money Games | 91 Clubs',
-  description: 'Join 91 Club to play exciting games like Aviator, Win Go, sports, and more. Compete and win real money prizes! Sign up now for the ultimate gaming experience!',
+  title: '91 Club - Exciting Games & Real Prizes | Join Now!',
+  description: 'Experience thrilling games like Aviator and Win Go on 91 Club. Compete for real money prizes and enjoy the ultimate gaming experience! Sign up now!',
   generator: '91 Clubs',
   applicationName: '91 Clubs',
   referrer: 'origin-when-cross-origin',
-  keywords: ['91 club, 91 club games, real money games, online gaming, 91 club app'],
+  keywords: ['91 club, real money games, online gaming, 91 club app'],
   authors: [{ name: 'Rahul Kumar' }],
   creator: 'Rahul Kumar',
   publisher: '91 Club APP',
@@ -27,8 +27,8 @@ export const metadata = {
     canonical: 'https://www.91clubs.info/',
   },
   openGraph: {
-    title: '91 Club - Play and Win Real Money Games | 91 Clubs',
-    description: 'Join 91 Club to play exciting games like Aviator, Win Go, sports, and more. Compete and win real money prizes! Sign up now for the ultimate gaming experience!',
+    title: '91 Club - Exciting Games & Real Prizes | Join Now!',
+    description: 'Experience thrilling games like Aviator and Win Go on 91 Club. Compete for real money prizes and enjoy the ultimate gaming experience! Sign up now!',
     url: 'https://www.91clubs.info/',
     siteName: '91 Club',
     images: [
@@ -56,8 +56,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '91 Club - Play and Win Real Money Games | 91 Clubs',
-    description: 'Join 91 Club to play exciting games like Aviator, Win Go, sports, and more. Compete and win real money prizes! Sign up now for the ultimate gaming experience!',
+    title: '91 Club - Exciting Games & Real Prizes | Join Now!',
+    description: 'Experience thrilling games like Aviator and Win Go on 91 Club. Compete for real money prizes and enjoy the ultimate gaming experience! Sign up now!',
     siteId: '1467726470533754880',
     creator: '@91club',
     creatorId: '1467726470533754880',
