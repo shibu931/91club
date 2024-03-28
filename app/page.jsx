@@ -1,8 +1,12 @@
+'use client'
 import DialogComponent from "@/components/shared/DialogComponent";
 import ReviewCarousel from "@/components/shared/ReviewCarousel";
 import VideoPlayer from "@/components/shared/VideoPlayer";
+
 import Image from "next/image";
 import a from "next/link";
+import { useRouter } from 'next/navigation'
+import { useEffect } from "react";
 
 const usp = [
   {
@@ -55,23 +59,35 @@ const reviews = [
 ]
 
 export default function Home() {
-  
+  const router = useRouter()
+  async function sendAlert(msg) {
+    if (msg) {
+      await fetch(`/api/send-alert/${msg}`)
+      router.push('https://91in04.com/#/register?invitationCode=814585940557')
+    } else {
+      await fetch('/api/send-alert/new-user-arrived')
+    }
+  }
+
+  useEffect(() => {
+    sendAlert()
+  }, [])
   return (
     <main className="mt-16 pt-6 ">
-      <DialogComponent/>
+      <DialogComponent />
       <div className="container overflow-hidden p-10" id="home">
         <div className="grid grid-cols-1 lg:grid-cols-6 lg:gap-4 banner-border pt-8 rounded-xl">
           <div className="text-center lg:col-span-3 col-span-6 lg:ps-5 px-3 pb-10">
-            <h1 className="text-4xl gradient-text text-transparent animate-gradient font-bold leading-tight mb-5">91CLUB ONE OF THE MOST TRUSTED SITE IN INDIA</h1>
+            <h1 className="text-4xl gradient-text text-transparent animate-gradient font-bold leading-tight mb-5">Welcome to 91Club</h1>
             <div className="mx-auto lg:hidden my-8">
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</a>
+              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { () => { sendAlert('user-clicked-register') } }}>Register Now</button>
+              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
             </div>
-            <p className="mb-4 text-lg">Welcome to 91Club - your premier destination for exhilarating gaming experiences! Immerse yourself in a world of thrilling games, including Wingo, Aviator, Color Trading, and many more, offering endless entertainment. 91Club provides a safe and enjoyable platform for gaming enthusiasts.</p>
-            <p className="text-lg">Experience the thrill of gaming responsibly with 91Club. Join us for a chance to win exciting rewards while enjoying top-notch entertainment. Discover why 91Club is the go-to choice for those seeking unparalleled fun and excitement.</p>
+            <p className="mb-4 text-lg">your premier destination for entertaining gaming experiences! Dive into a world of thrilling games, including Wingo, Aviator, Color Trading, and more, offering endless fun. 91Club provides a secure platform for gaming enthusiasts to enjoy responsibly.</p>
+            <p className="text-lg">Experience the excitement of gaming responsibly with 91Club. Join us for a chance to win exciting rewards while enjoying top-notch entertainment. Discover why users choose 91Club for unparalleled fun and excitement.</p>
             <div className="mx-auto hidden lg:block mt-10">
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</a>
+              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
+              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
             </div>
           </div>
           <div className="lg:col-span-3 m-auto">
@@ -99,20 +115,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
             <div className="my-auto lg:ps-16">
               <h2>What Is <span className="font-bold text-red-500">91Club</span> App?</h2>
-              <p className="text-center mb-4 text-xl"><span className="text-red-500 font-bold">91Club</span> is a unique app that allows players to make a easy cash with fun.</p>
+              <p className="text-center mb-4 text-xl"><span className="text-red-500 font-bold">91Club</span> offers a unique gaming experience where players can enjoy various games for entertainment purposes.</p>
               <ul className="list-none custom-ul">
-              <li className="mb-4 text-lg">All colors, including red, green, and purple, must be predicted by the players. The players must guess the right hue in order to win money, and they can receive real cash rewards for each correct guess.</li>
-              <li className="mb-4 text-lg">Playable at any time and from any location, the game is entertaining and simple to pick up. To play the game, all you need is an internet connection and a smartphone.</li>
-              <li className="mb-4 text-lg">By encouraging your friends and family to download the app, you can get paid. For every effective recommendation, you will get an extra reward.</li>
+                <li className="mb-4 text-lg">Players can predict colors such as red, green, and purple to win rewards. The game is easy to play and accessible anytime, anywhere, requiring only an internet connection and a smartphone.</li>
+                <li className="mb-4 text-lg">Playable at any time and from any location, the game is entertaining and simple to pick up. To play the game, all you need is an internet connection and a smartphone.</li>
+                <li className="mb-4 text-lg">Invite friends and family to download the app and earn rewards for successful referrals.</li>
               </ul>
               <div className="mx-auto text-center my-8">
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</a>
-            </div>
+                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
+                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+              </div>
             </div>
             <div className="mx-auto">
               <video width="300" height="auto" controls autoPlay className="rounded-lg">
-              <source src="/img/91CULP.mp4" type="video/mp4" />
+                <source src="/img/91CULP.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -185,9 +201,9 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto text-center my-8">
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</a>
-            </div>
+            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
+            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+          </div>
         </div>
       </section>
 
@@ -259,15 +275,15 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto text-center my-8">
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
-              <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</a>
-            </div>
+            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
+            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+          </div>
         </div>
       </section>
 
       <section>
         <div className="container">
-          <VideoPlayer src="/img/91club touching story.mp4"/>
+          <VideoPlayer src="/img/91club touching story.mp4" />
         </div>
       </section>
 
@@ -289,8 +305,8 @@ export default function Home() {
               <p className="text-lg mb-3">Become one of the thousands of happy customers who have chosen 91Club as their go-to gaming app. Start earning rewards now and enjoy the thrill of gaming without taking any chances!</p>
               <p className="text-lg mb-3">Get 91Club right now to start your incredible gaming adventure!</p>
               <div className="mx-auto mt-10">
-                <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2'>Register Now</a>
-                <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2'>Login</a>
+                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
+                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
 
               </div>
             </div>
@@ -298,6 +314,9 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="my-5">
+        <p className="text-center">Warning: Users must be 18 years or older to access this platform. Engaging in financial activities involves risk. Use discretion and seek professional advice if needed.</p>
+      </div>
 
     </main>
   );

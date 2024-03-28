@@ -9,9 +9,18 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
+import { useRouter } from 'next/navigation'
 import a from "next/link"
 
 const ReviewCarousel = ({ reviews }) => {
+    const router = useRouter()
+    async function sendAlert(msg){
+      if(msg){
+        await fetch(`/api/send-alert/${msg}`)
+        router.push('https://91in04.com/#/register?invitationCode=814585940557')
+        }else{
+        await fetch('/api/send-alert/new-user-arrived')
+    }}
     return (
         <Carousel className="w-full">
             <CarouselContent className="-ml-1">
@@ -29,8 +38,8 @@ const ReviewCarousel = ({ reviews }) => {
                                     <p className="text-lg mb-6">{item.content}</p>
                                     <p className="font-semibold text-xl">-{item.name}</p>
                                     <div className="mx-auto flex felx-wrap mt-10">
-                                        <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-blue-500 text-white rounded-md my-auto me-2'>Register Now</a>
-                                        <a href="https://91in04.com/#/register?invitationCode=814585940557" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-green-500 text-white rounded-md my-auto me-2'>Login</a>
+                                        <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-blue-500 text-white rounded-md my-auto me-2'onClick={()=>{sendAlert('user-clicked-register')}}>Register Now</button>
+                                        <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-green-500 text-white rounded-md my-auto me-2' onClick={()=>{sendAlert('user-clicked-login-btn')}}>Login</button>
                                     </div>
                                 </div>
 
