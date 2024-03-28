@@ -79,19 +79,19 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-ZK7TTZ5G1T');
           `}
         </Script>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16508776390"></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16514110701"></Script>
         <Script>
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'AW-16508776390');
+          gtag('config', 'AW-16514110701');
           `}
         </Script>
         <Script>
           {`
-            gtag('event', 'conversion', {'send_to': 'AW-16508776390/G_qGCKqMjJ8ZEMbf_789'});
+            gtag('event', 'conversion', {'send_to': 'AW-16514110701/jTLLCMrv8aAZEO2pxcI9'});
           `}
         </Script>
       </head>
