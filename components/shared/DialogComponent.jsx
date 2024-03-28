@@ -25,7 +25,6 @@ const DialogComponent = ({ state }) => {
     async function sendAlert(msg){
       if(msg){
         await fetch(`/api/send-alert/${msg}`)
-        router.push('https://91in04.com/#/register?invitationCode=814585940557')
         }else{
         await fetch('/api/send-alert/new-user-arrived')
     }}
@@ -38,7 +37,7 @@ const DialogComponent = ({ state }) => {
                     </div>
                     <h2 className="text-center text-purple-700 text-3xl font-bold">Register Now<br /> &<br /> Start Playing Now</h2>
                     <div className="mx-auto text-center mt-10">
-                        <button className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={()=>{()=>{sendAlert('user-clicked-register')}}}>Register Now</button>
+                        <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={()=>{()=>{sendAlert('user-clicked-register')}}}>Register Now</a>
                     </div>
                 </div>
             </div>

@@ -63,7 +63,6 @@ export default function Home() {
   async function sendAlert(msg) {
     if (msg) {
       await fetch(`/api/send-alert/${msg}`)
-      router.push('https://91in04.com/#/register?invitationCode=814585940557')
     } else {
       await fetch('/api/send-alert/new-user-arrived')
     }
@@ -80,14 +79,14 @@ export default function Home() {
           <div className="text-center lg:col-span-3 col-span-6 lg:ps-5 px-3 pb-10">
             <h1 className="text-4xl gradient-text text-transparent animate-gradient font-bold leading-tight mb-5">Welcome to 91Club</h1>
             <div className="mx-auto lg:hidden my-8">
-              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { () => { sendAlert('user-clicked-register') } }}>Register Now</button>
-              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+              <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { () => { sendAlert('user-clicked-register') } }}>Register Now</a>
+              <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</a>
             </div>
             <p className="mb-4 text-lg">your premier destination for entertaining gaming experiences! Dive into a world of thrilling games, including Wingo, Aviator, Color Trading, and more, offering endless fun. 91Club provides a secure platform for gaming enthusiasts to enjoy responsibly.</p>
             <p className="text-lg">Experience the excitement of gaming responsibly with 91Club. Join us for a chance to win exciting rewards while enjoying top-notch entertainment. Discover why users choose 91Club for unparalleled fun and excitement.</p>
             <div className="mx-auto hidden lg:block mt-10">
-              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
-              <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+              <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</a>
+              <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</a>
             </div>
           </div>
           <div className="lg:col-span-3 m-auto">
@@ -122,8 +121,8 @@ export default function Home() {
                 <li className="mb-4 text-lg">Invite friends and family to download the app and earn rewards for successful referrals.</li>
               </ul>
               <div className="mx-auto text-center my-8">
-                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
-                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+                <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</a>
+                <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</a>
               </div>
             </div>
             <div className="mx-auto">
@@ -201,8 +200,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto text-center my-8">
-            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
-            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+            <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</a>
+            <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</a>
           </div>
         </div>
       </section>
@@ -275,8 +274,8 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto text-center my-8">
-            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
-            <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+            <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</a>
+            <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</a>
           </div>
         </div>
       </section>
@@ -305,8 +304,8 @@ export default function Home() {
               <p className="text-lg mb-3">Become one of the thousands of happy customers who have chosen 91Club as their go-to gaming app. Start earning rewards now and enjoy the thrill of gaming without taking any chances!</p>
               <p className="text-lg mb-3">Get 91Club right now to start your incredible gaming adventure!</p>
               <div className="mx-auto mt-10">
-                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</button>
-                <button className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</button>
+                <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-orange-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-register') }}>Register Now</a>
+                <a href="https://91in04.com/#/register?invitationCode=814585940557" target="_blank" className='cta-btn px-3 sm:px-6 font-semibold py-2 animated-border bg-red-500 text-white rounded-md my-auto me-2' onClick={() => { sendAlert('user-clicked-login-btn') }}>Login</a>
 
               </div>
             </div>
